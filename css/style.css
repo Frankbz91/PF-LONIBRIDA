@@ -1,0 +1,193 @@
+/*comentario css que se compila */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+}
+
+header {
+  height: 19rem;
+  background-color: #333;
+  color: #fff;
+  padding: 0;
+}
+
+.logo {
+  height: 16rem;
+  overflow: hidden;
+}
+
+.boton-landing {
+  display: inline;
+}
+
+.navbar-1 {
+  width: 100%;
+  height: fit-content;
+}
+
+.navbar-1-link {
+  font-size: 1rem;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  height: 3rem;
+}
+nav ul li:hover {
+  background-color: rgba(255, 0, 0, 0.5568627451);
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-2 {
+  display: none;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+h1, h2 {
+  padding: 10px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #0056b3;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  transform: scale();
+}
+.gallery img {
+  max-width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: transform 1s ease;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+  border: 3px solid rgba(255, 0, 0, 0.5568627451);
+}
+
+.perfil-artista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.perfil-artista img {
+  max-width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #fff;
+  border-radius: 300px;
+}
+
+.form-container {
+  justify-content: center;
+  background-color: #3f3f3f;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+form input[type=submit] {
+  background-color: #101010;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: rgba(255, 0, 0, 0.5568627451);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .navbar-1-link {
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .perfil-artista img {
+    max-width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #fff;
+    border-radius: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
