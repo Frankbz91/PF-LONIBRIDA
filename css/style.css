@@ -1,4 +1,4 @@
-/*comentario css que se compila */
+/*comentario css que se compila*/
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +46,8 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 nav ul li {
   height: 3rem;
@@ -71,6 +73,10 @@ main {
 
 h1, h2 {
   padding: 10px;
+}
+
+h2 {
+  font-style: italic;
 }
 
 .boton {
@@ -171,6 +177,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.logo-ig {
+  width: 40px;
+}
+
 @media (max-width: 576px) {
   .navbar-1-link {
     font-size: 1rem;
@@ -187,6 +197,11 @@ footer {
     object-position: center;
     border: 2px solid #fff;
     border-radius: 300px;
+  }
+}
+@media (max-width: 370px) {
+  .navbar-1-link {
+    font-size: 12px;
   }
 }
 

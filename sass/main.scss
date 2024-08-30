@@ -1,7 +1,7 @@
 @import "utilidades/variables";
 
 //asi se comenta en sass 
-/*comentario css que se compila */
+/*comentario css que se compila*/
  
 * {
     margin: 0;
@@ -51,6 +51,8 @@ nav {
         list-style: none;
         display: flex;
         justify-content: center;
+        padding: 0;
+        margin: 0;
 
         li {
             height: 3rem;
@@ -78,8 +80,13 @@ main {
     color: $color-letras;
 }
 
-h1, h2 {
+h1 {
     padding: 10px;
+}
+
+h2 {
+    @extend h1;
+    font-style: italic;
 }
 
 .boton {
@@ -187,6 +194,10 @@ footer {
     flex-wrap: wrap;
 }
 
+.logo-ig {
+    width: 40px;
+}
+
 @media (max-width: 576px) {
     .navbar-1-link {
         font-size: 1rem;
@@ -208,4 +219,10 @@ footer {
         }
     }
 
+}
+
+@media (max-width: 370px) {
+    .navbar-1-link {
+        font-size: 12px;
+}
 }
